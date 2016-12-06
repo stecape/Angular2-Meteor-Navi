@@ -5,8 +5,8 @@ import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
-import { PARTIES_DECLARATIONS } from './parties';
 import { MENU_DECLARATIONS } from './menu';
+import { PARTIES_DECLARATIONS } from './parties';
 import { HOME_DECLARATIONS } from './pages/home';
 import { CONTROLLER_DECLARATIONS } from './pages/controller';
 import { WATERPLANT_DECLARATIONS } from './pages/waterplant';
