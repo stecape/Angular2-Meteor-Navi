@@ -7,11 +7,11 @@ import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 import { PARTIES_DECLARATIONS } from './parties';
 import { MENU_DECLARATIONS } from './menu';
-import { HOME_DECLARATIONS } from './menu';
-import { CONTROLLER_DECLARATIONS } from './menu';
-import { WATERPLANT_DECLARATIONS } from './menu';
-import { DOCS_DECLARATIONS } from './menu';
-import { TRENDS_DECLARATIONS } from './menu';
+import { HOME_DECLARATIONS } from './pages/home';
+import { CONTROLLER_DECLARATIONS } from './pages/controller';
+import { WATERPLANT_DECLARATIONS } from './pages/waterplant';
+import { DOCS_DECLARATIONS } from './pages/docs';
+import { TRENDS_DECLARATIONS } from './pages/trends';
 
 @NgModule({
   imports: [
@@ -23,7 +23,12 @@ import { TRENDS_DECLARATIONS } from './menu';
   declarations: [
     AppComponent,
     ...PARTIES_DECLARATIONS,
-    ...MENU_DECLARATIONS
+    ...MENU_DECLARATIONS,
+    ...HOME_DECLARATIONS,
+    ...CONTROLLER_DECLARATIONS,
+    ...DOCS_DECLARATIONS,
+    ...TRENDS_DECLARATIONS,
+    ...WATERPLANT_DECLARATIONS,
   ],
   bootstrap: [
     AppComponent

@@ -2,6 +2,11 @@ import  { MenuItem } from './menu-item-model'; 	//importo la classe MenuItem cos
 
 export const MENUITEMS: MenuItem[] = [		//esporto un oggetto costante di tipo MenuItem[] che si chiama MENUITEM che contiene
 		{									//tutte le proprietà degli item del menu di navigazione.
+			name: "Parties",
+			description: "You gotta fight for your right to party!!!",
+			path: "parties"
+		},
+		{
 			name: "Home",
 			description: "An overview page of my webapp",
 			path: "home"

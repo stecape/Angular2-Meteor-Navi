@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
- 
+
+import template from './controller.component.html';
+
 @Component({
   selector: 'controller',
-  templateUrl: './controller.component.html'
+  template
 })
 export class ControllerComponent implements OnInit {
- 
+
   constructor() { }
 
   ngOnInit() { }

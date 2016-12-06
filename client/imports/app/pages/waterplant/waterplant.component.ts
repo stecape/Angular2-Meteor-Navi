@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
- 
+
 import template from './waterplant.component.html';
- 
+
 @Component({
-  selector: 'water-plant',
+  selector: 'waterplant',
   template
 })
 export class WaterPlantComponent implements OnInit {
- 
+
   constructor() { }
 
   ngOnInit() { }
