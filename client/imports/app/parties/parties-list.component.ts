@@ -49,6 +49,8 @@ export class PartiesListComponent implements OnInit, OnDestroy {
         sort: { name: nameOrder as number }
       };
 
+      this.paginationService.setCurrentPage(this.paginationService.defaultId, curPage as number);
+
       if (this.partiesSub) {
         this.partiesSub.unsubscribe();
       }
@@ -72,6 +74,7 @@ export class PartiesListComponent implements OnInit, OnDestroy {
     this.pageSize.next(10);
     this.curPage.next(1);
     this.nameOrder.next(1);
+  }
 
   removeParty(party: Party): void {
     Parties.remove(party._id);
@@ -79,6 +82,10 @@ export class PartiesListComponent implements OnInit, OnDestroy {
 
   search(value: string): void {
     this.parties = Parties.find(value ? { location: value } : {}).zone();
+  }
+
+  onPageChanged(page: number): void {
+    this.curPage.next(page);
   }
 
   ngOnDestroy() {
